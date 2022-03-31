@@ -1,0 +1,168 @@
+* {
+    /* outline: 1px solid #f00; */
+} 
+
+.about_tabbar{
+    margin: 20px 0;
+}
+
+.about_video_wrap{
+    width: 100%;
+    height: 0; 
+    padding-bottom: 56.25%;/*為了等比例縮放*/
+    position: relative;
+}
+
+.about_video_wrap video{/*這邊會跟著map*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+
+.about_tabbar button{
+background: #4d5f2c;
+border-radius: 40px;
+margin: 0;
+padding: 10px;
+border: 1px solid transparent; 
+outline: none; 
+}
+.about_tabbar button span{
+ color:#fff;
+ font-size: 18px;
+ font-family: 'Arial',"Adobe 繁黑體 Std","Microsoft JhengHei" ;
+}
+
+.about_tabbar button:hover{
+    background: #f1cfa0;
+}
+
+.tab_story{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+.tab_story .story_txt{
+    text-align: center;
+}
+
+
+@media screen and (min-width:768px){
+    .tab_story{
+         flex-direction: row;
+    }
+   
+    .chef_wrap{
+        position: relative;
+        box-sizing: border-box;
+        /* float: left;
+        width: 31.66666666666667%;
+        margin: 0px 0.8333333333333%; */
+        text-align: center;
+    }
+  
+    .f_fabio , .f_gong , .f_jamie {     
+        perspective:500px;
+        backface-visibility: hidden;
+        transition: all 2s;
+        transform:rotateX(0deg);
+    }
+
+    .b_fabio , .b_gong, .b_jamie{
+        perspective:500px;
+        backface-visibility: hidden;
+        transition: all 2s;
+        position: absolute; 
+        width: 95%;
+        height: 100%;
+        transform:translateY(-50%);
+        padding: 50px 0;
+        box-sizing: border-box; 
+        top:0;
+        transform:rotateX(180deg);
+    }
+
+  
+    .chef_wrap:hover .b_fabio ,   .chef_wrap:hover .b_gong ,   .chef_wrap:hover .b_jamie {
+      transform: rotateX(360deg);
+
+    }
+    .chef_wrap:hover .f_fabio ,  .chef_wrap:hover .f_gong  ,   .chef_wrap:hover .f_jamie {
+      transform:rotateX(180deg);
+
+    }
+  
+    .environment_wrap{
+        width: 100%;
+        padding: 70px 0px;
+        box-sizing: border-box;
+        margin: auto;  
+        /* perspective-origin: top center; */
+        perspective: 800px;
+        position: relative;
+    }
+
+
+    .environment_wrap .group{
+        animation: change 20s ease-in-out;
+        animation-delay: 0.5s;
+    }
+
+
+    .environment_wrap .group{
+        width: 600px;
+        height: 300px;
+        /* position: absolute; */
+        margin: auto;
+        transform: translateZ(-150px)  rotate3d(1,0,0,0deg);;
+        transform-style: preserve-3d;
+    
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    img[alt*="shoppic"]{
+        height: 100%;
+    }
+
+    @keyframes change{
+        0%{  transform: translateZ(-150px) rotate3d(0,1,0,0deg);}
+        5%{  transform: translateZ(-150px) rotate3d(0,1,0,90deg);}
+        15%{  transform: translateZ(-150px) rotate3d(0,1,0,180deg);}
+        20%{  transform: translateZ(-150px) rotate3d(0,1,0,270deg);}
+        25%{  transform: translateZ(-150px) rotate3d(0,1,0,360deg);}
+        50%{  transform: translateZ(-150px) rotate3d(1,0,0,-90deg);}
+        75%{  transform: translateZ(-150px) rotate3d(1,0,0,90deg);}
+        100%{  transform: translateZ(-150px) rotate3d(1,0,0,0deg);}
+    }
+
+    .front,.back,.top,.down,.right,.left{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+
+    .front{ transform: translateZ(150px); }
+    .back{ transform: rotateY(180deg) translateZ(150px); }
+    .top{transform: rotateX(90deg) translateZ(150px);}
+    .down{transform: rotateX(-90deg) translateZ(150px);}
+    .right{transform: rotateY(90deg) translateZ(300px)  scalex(0.5); }
+    .left{transform: rotateY(270deg)  translateZ(300px) scalex(0.5);}
+
+    }
+
+    @media screen and (min-width:992px) {
+        .about_navbar{
+        position: sticky;
+        top:5%;
+        }
+    }

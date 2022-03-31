@@ -1,0 +1,399 @@
+
+ *{
+    /* outline: 1px solid #f00; */
+  }     
+
+/*icon*/
+.icon.service{
+    width: 30px;
+    height: 30px;
+    background-color: #4d5f2c;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icon.service a{
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.icon.service:hover{
+    background-color: #f1cfa0;
+}
+/*--icon--*/
+
+
+/*--服務--*/
+.itemmenu , .itemcook, .icon.service{
+    text-align: center;
+    margin: 0 auto;
+}
+/*--服務--*/
+
+/*--food--*/
+.food .container{
+    position: relative;
+}
+
+.food_title:before{
+    content: '';
+    width: 30%;
+    height: 5vh;
+    background-color: #f1cfa0c2;
+    position: absolute;
+    /* top: -33px; */
+    z-index: -1;
+    transform: skewY(-10deg);
+}
+
+.js_showfood{
+    display: none;
+}
+
+.ranked{
+    border: 1px solid #f6d365;
+    /* background-color: #ccc; */
+    width: 20%;
+}
+.ranked:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top:15px solid #f6d365;
+    /* border-top:15px solid #ccc; */
+    border-left:15px solid transparent;
+    border-right:0px solid transparent;
+    border-bottom:0px solid transparent;
+}
+
+/*--food--*/
+
+
+/*--主要標題--*/
+.main_title{
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    /* border-bottom: 2px solid #4d5f2c; */
+    position: relative;
+}
+/*--主要標題--*/
+
+
+/*--聯絡我們&環境--*/
+
+.contact .container{
+    text-align: center; 
+}
+
+.environment_text{
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+.contact .main_title:before , .environment .main_title:before{
+    content: '';
+    width: 10px;
+    height: 80%;
+    background-color: #f6d365;
+    position: absolute;
+    top: 0;
+    left: 18%;
+}
+.contact .main_title:after , .environment .main_title:after{
+    content: '';
+    width: 10px;
+    height: 80%;
+    background-color: #f6d365;
+    position: absolute;
+    top: 0;
+    right: 18%;
+}
+
+.map{
+    width: 100%;
+    height: 0; 
+    padding-bottom: 56.25%;/*為了等比例縮放*/
+    position: relative;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+/*--聯絡我們&環境--*/
+
+/* slider */
+    /* Position the image container (needed to position the left and right arrows) */
+    .slider_container{
+    position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+    cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #4d5f2c;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+    background-color: #f1cfa0;
+    color: #fff;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    }
+
+    /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    */
+    /* Six columns side by side */
+    .column {
+    float: left;
+    width: 25%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+    opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+    opacity: 1;
+    }
+/* slider */
+
+
+@media screen and (max-width:767px){
+
+    .banner .banner_text{
+        text-align: center;
+    }
+
+    .service .itempic{
+        padding: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .bignoodle{
+        width: 94%;
+        transform: rotate(-10deg);
+    }
+
+
+    .bigsourse{
+        width: 94%;
+        transform: rotate(20deg);
+    }
+
+    .js_closefood{
+        text-align: center;
+    }
+
+    .contactus_h2{
+        margin-top:40px;
+    }
+
+}
+
+
+@media screen and (min-width:768px){
+
+    /* BN */
+    .banner{
+        position: relative;
+    }
+    .banner .banner_text{
+        z-index: 2;
+        position: absolute;
+        top: 20%;
+        left: 4%;
+        width: 350px;
+        animation: fadeInLeft 2s 1;
+    }
+    .banner .banner_pic{
+        float: right;
+    }
+    
+    .banner p{
+        background-color:  #4d5f2c;
+        /* z-index: 1; */
+        padding: 10px;
+        /* margin: 0 0 0 20px; */
+        /* color: #4d5f2cbb; */
+        color: #fff;
+        font-size: 30px;
+    }
+    /* --BN-- */
+
+
+    /*--主要標題--*/
+    .main_title{
+        margin-bottom: 50px;
+    }
+    /*--主要標題--*/
+
+    .service .container{
+        display:flex;
+        padding: 100px 10px;
+        box-sizing: border-box;
+        position: relative; 
+    }
+
+    .service .container:before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+     
+        border-top:200px solid #f1cfa0;
+        border-left:150px solid transparent;
+        border-right:150px solid transparent;
+        border-bottom:0px solid #f1cfa0;
+        z-index: -1;
+        opacity: 0.5;
+        transform: rotate(-20deg);
+       /* animation: rotate 20s linear infinite reverse; */
+
+    }
+
+    .service .container::after{
+        content: '';
+        position: absolute;   
+        width: 0;
+        height: 0;
+        right: 0;
+        bottom: 0;
+        border-top:250px solid #f1cfa0;
+        border-left:150px solid transparent;
+        border-right:150px solid transparent;
+        border-bottom:0px solid #f1cfa0;
+        z-index: -1;
+        opacity: 0.5;
+        transform: rotate(30deg);
+        /* animation: rotate 20s linear infinite reverse; */
+    }
+
+    .service .container .grow{
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bignoodle{
+        position: absolute;
+        transform: rotate(-70deg);
+        z-index: -1;
+        width: 50%;
+        top: 200px;
+        left: 10%;
+        animation: rotate 20s linear infinite reverse;
+    }
+
+    .bigsourse{
+        position: absolute;
+        transform: rotate(45deg);
+        z-index: -1;
+        width: 30%;
+        top: 80%;
+        right: 20%;
+        animation: rotate 20s linear infinite reverse;
+    }
+
+    .service .container .grow .itemmenu{
+        order: -1;
+    }
+
+    .service .container h2{
+        text-align: left;
+    }
+
+    .environment2 .itempic img{
+        outline: 1px solid #ccc;
+        border: 5px solid #fff;
+        /* border-bottom: 50px solid #fff; */
+    }
+
+    /* --food-- */
+
+    .food .itempic:hover img{
+        animation: tada 2s linear infinite reverse;
+    }
+    .food img{
+        cursor: pointer;
+    }
+
+    .food .js_showfood{
+        display: block;
+    }
+    .food .js_closefood{
+        display: none;
+    }
+
+    .food .container .itempic{
+        text-align: center;
+    }
+    .small_pic{
+        width: 50%;
+    }
+    /* --food-- */
+
+}
+
+/*-- 動畫--*/
+@keyframes rotate{
+    0%{transform:rotate(0deg)};
+    50%{transform:rotate(360deg)};
+    100%{transform:rotate(0deg)};
+}

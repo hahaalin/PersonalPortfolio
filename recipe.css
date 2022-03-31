@@ -1,0 +1,187 @@
+
+    *{
+        /* outline: 1px solid #f00; */
+    }
+
+    .item{
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0px 0px 5px #ccc;
+        margin-bottom:  20px;
+    }
+
+    .item img{
+        width: 100%;
+    }
+
+   .item.text{ 
+        display: flex;
+    }
+
+    .iframe{
+        width: 100%;
+        height: 0; /*要設定高度為0*/
+        padding-bottom: 56.25%;/*為了等比例縮放*/
+        position: relative;
+    }
+    .videocook_wrap iframe{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .item.text img{ 
+        width: 30%;
+        height: 100%;
+    } 
+
+     .item.text a{ 
+        width: 70%;
+        margin: 0 0 0 10px;
+        display: inline-block;
+    }
+
+     .item.keyword a{
+         display: inline-block;
+         padding: 10px;
+         background-color: #fff;
+     
+         border-radius: 5%;
+         margin-bottom: 5px;
+         color: #6e504f;
+         border:1px solid #ccc;
+     }
+
+     .item.keyword a:hover{
+        background-color: #ccc;
+     }
+     
+/*料理種類*/
+        .type{
+            width: 100%;
+            margin:auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 10px;
+        }
+
+        .card{
+            width: 50%;
+            
+            padding: 10px;
+            box-sizing: border-box;
+            /* display: block; */
+        }
+/*料理種類*/
+
+
+/*serchbar*/
+        input,select{
+            display: inline-block;
+            text-decoration: none;
+            font-family: "Microsoft JhengHei";
+            font-size: 16px;
+            color: #6e504f;
+            vertical-align: middle;
+            padding: 10px 10px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 0 5px 0 0;
+          }
+
+        .serchbar{
+            font-size: 0;
+            text-align: center;
+            margin-top:20px;
+        }
+        .serchbar a{
+            display: inline-block;
+            font-size: 16px;
+            padding: 14px 10px;
+            border-radius: 10px;
+            background-color: #4d5f2c;
+            border: 1px solid #ccc;
+            color: #fff;
+            vertical-align: bottom;
+        }
+/*serchbar*/
+
+        .videocook_title{
+            display: flex;
+            padding: 0 10px;
+            justify-content: space-between;
+        }
+
+        .newrecipe_title{
+            display: flex;
+            padding: 0 10px;
+            justify-content: space-between;
+        }
+        .recipetype_title{
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .recipewrap_bn{
+            margin-top: 50px;
+        }
+@media screen and (max-width:767px){
+        
+ .card{
+          box-sizing: border-box;
+        /* background-color: rgb(42, 124, 79); */
+            border:1px solid #ccc; 
+            padding: 10px;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    .serchbar{
+        margin-top:50px;
+    }
+
+    .item{
+        margin-bottom:  10px;
+    }
+        
+    .type{
+        display:flex;
+        margin:auto;
+        /* position: relative; */
+    }
+
+    .card{
+        width: 16.666666%;
+        height: auto;
+        overflow: hidden;
+        border:0px solid #ccc; 
+        transition: all 2s ;
+        transform: perspective(600px) rotateY(45deg);
+    }
+
+    .card:hover{
+        /* z-index: 3; */
+        transform: scale(1.2) translateY(-10px);
+        box-sizing: border-box;
+        /* background-color: rgb(42, 124, 79); */
+        border:1px solid #ccc; 
+        padding: 10px;
+    }
+
+    .card h4{
+        /* opacity: 0; */
+        color: #ccc;
+        transition: all 2s ;
+    }
+    .card:hover h4{
+        color:#6e504f;
+        /* opacity: 1; */
+        
+    }
+
+ }
+ 

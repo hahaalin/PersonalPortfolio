@@ -1,0 +1,103 @@
+/* *{
+  outline: 1px solid #f00;
+} */  
+
+
+  img[alt*="booking_form_pic"]{
+    width: 40%;
+  }
+
+  .booking_form_detail{
+    padding: 10px 0px;
+    font-size: 0px;
+  }
+  
+  /*沒有用inline的話無實際被撐開*/
+  
+  .booking_form label{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  input , select , textarea {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Microsoft JhengHei";
+    font-size: 16px;
+    color: #6e504f;
+    vertical-align: middle;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+
+    border-bottom: 1px solid #6e504f;
+  }
+  
+  
+  input[type="submit"] {
+    display: inline-block;
+    background-color: #4d5f2c;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin: 0px 10px 0px 0px;
+    
+    /*會有預設padding問題所以要設0*/
+  }
+
+  input[type="reset"]{
+    display: inline-block;
+    background-color: #f1cfa0;
+    color: #6e504f;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 10px;
+  }
+  
+  .booking_title{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    
+  }
+  
+  .booking_title p:nth-child(2){
+    text-align: left;
+  }
+  
+  .booking_title h3 , .booking_form_title{
+    color: #BC824B;
+    text-align: center;
+  }
+  
+  
+  .booking_form{
+    font-size: 0px;
+    padding: 10px;
+    margin: auto;
+   
+  }
+  
+
+  .button_cancel{
+    margin: auto;
+    text-align:right;
+    background-color: #cccccc;
+    padding: 10px;
+    
+  }
+  
+  .button_cancel a{
+    font-family: "Microsoft JhengHei";
+    display: inline-block;
+    font-size: 16px;
+    text-align:center;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #4d5f2c;
+  }
+  

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>關於我們</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="share2.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="page_header">
+
+        <div class="logo">
+            <a href="index.html"><img src="indeximg/logo-1.png" alt="home_logo"></a>
+        </div>
+
+        <input type="checkbox" name="hb_control" id="hb_control">
+
+        <label class="hb" for="hb_control">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </label>
+
+        <nav class="page_navbar">
+            <ul>
+                <li><a href="menu.html">帥廚菜單</a></li>
+                <li><a href="cook.html">手作體驗</a></li>
+                <li><a href="booking.html">線上訂位</a></li>
+                <li><a href="new.html">最新消息</a></li>
+                <li><a href="recipe.html">食譜分享</a></li>
+                <li><a lass="hoverbg" href="about.html">關於我們</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- 內頁banner區 -->
+    <div class="banner inner">
+        <h2>關於我們<br>About Us</h2>
+    </div>
+
+    <div class="topicon"><a href="#">Top</a></div>
+    <!--  -->
+
+
+    <section class="about_inner">
+        <div id="app">
+            <div class="container">
+
+                <div class="col-md-2 about_navbar">
+                    <p>提供給你安心又健康的料理<br>Provide you with peace of mind and healthy cuisine</p>
+                </div>
+
+                <div class="col-md-10">
+
+                    <div class="about_video_wrap">
+                        <video muted loop autoplay playsinline>
+                            <source src="indeximg/file.mp4" type="video/mp4">
+                        </video>
+                </div>
+
+
+                    <!-- <span id="tab-1"></span>
+                <span id="tab-2"></span>
+                <span id="tab-3"></span> -->
+
+
+                    <div class="about_tabbar" id="tab">
+
+                        <!-- <!– 頁籤按鈕 –> -->
+                            <button @click="content='tab_chef'"><span>廚師介紹</span></button>
+                            <button @click="content='tab_story'"><span>品牌故事</span></button>
+                            <button @click="content='tab_environment'"><span>餐廳環境</span></button>
+
+                    </div>
+                    
+                        <component :is="content"></component>
+
+
+                        <!-- <!– 頁籤的內容區塊 –> -->
+
+                        <!-- 內1-->
+
+                        <!-- <div class="tab-content-1">
+
+                        <div class="pic">
+                            <img src="indeximg/about-story.jpg" alt="about-story">
+                        </div>
+
+                        <div class="item">
+                            <h3>品牌故事</h3>
+                            <p>愛吃！想吃！怎麼吃？都由您決定！<br>更有明星廚師為我們餐廳料理<br>期待您品嘗時，<br>每一口都吃進最真實的感動！</p>
+                        </div>
+                    </div> -->
+
+                        <!-- 內1-->
+
+                        <!-- 內2-->
+
+                        <!-- <div class="tab-content-2">
+
+                        <div class="chef_wrap">
+                            <div class="f_fabio"><img src="indeximg/chef2.jpg" alt="chef"></div>
+                            <div class="b_fabio">
+                                <h4>法比歐Fabio</h4>
+                                <p>帥度★★★✩✩</p>
+                                <p>擅長義式料理
+                                    <hr>
+                                </p>
+                                <p>不僅擁有高超的料理手法，更具令人折服的藝術性盤式美感</p>
+                            </div>
+
+                        </div>
+
+                        <div class="chef_wrap">
+                            <div class="f_gong"><img src="indeximg/Gong_Yoo_(Sep_2016).png" alt="chef"></div>
+                            <div class="b_gong">
+                                <h4>孔劉Gong Yoo</h4>
+                                <p>帥度★★★★✩</p>
+                                <p>擅長義式料理
+                                    <hr>
+                                </p>
+                                <p>不僅擁有高超的料理手法，更具令人折服的藝術性盤式美感</p>
+                            </div>
+                        </div>
+
+                        <div class="chef_wrap">
+                            <div class="f_jamie"><img src="indeximg/chef.jpg" alt="chef"></div>
+                            <div class="b_jamie">
+                                <h4>傑米奧利佛Jamie</h4>
+                                <p>帥度★★★✩✩</p>
+                                <p>擅長義式料理
+                                    <hr>
+                                </p>
+                                <p>不僅擁有高超的料理手法，更具令人折服的藝術性盤式美感</p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div> -->
+                        <!-- 內2-->
+
+                        <!-- 內3 -->
+                        <!-- <div class="tab-content-3">
+
+                        <div class="environment_wrap">
+                            <div class="group">
+                                <div class="front"><img src="indeximg/shop1.jpg" alt="shoppic"></div>
+                                <div class="back"><img src="indeximg/shop2.jpg" alt="shoppic"></div>
+                                <div class="top"><img src="indeximg/shop3.jpg" alt="shoppic"></div>
+                                <div class="down"><img src="indeximg/shop7.jpg" alt="shoppic"></div>
+                                <div class="right"><img src="indeximg/shop8.jpg" alt="shoppic"></div>
+                                <div class="left"><img src="indeximg/shop7.jpg" alt="shoppic"></div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                        <!-- 內3 -->
+                    </div>
+                    <!-- tab結束 -->
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <footer>
+        <div class="container">
+
+            <div class="company">
+                <p>義術家有限公司</p>
+                <a href="index.html"><img src="indeximg/logo-1.png" alt="logo"></a>
+                <p>桃園市桃園區宏昌八街79號</p>
+                <p>03-333-333</p>
+            </div>
+
+            <div class="knowus">
+                <p>認識我們</p>
+                <a href="menu.html">帥廚菜單</a><span>/</span>
+                <a href="cook.html">手作體驗</a><span>/</span>
+                <a href="booking.html">線上訂位</a><span>/</span>
+                <a href="new.html">最新消息</a><span>/</span>
+                <a href="recipe.html">食譜分享</a><span>/</span>
+                <a href="about.html">關於我們</a>
+
+                <div class="followus">
+                    <p>追蹤我們</p>
+                    <a href="#"><img src="indeximg/facebook.png" alt="icon share_fb"></a>
+                    <a href="#"><img src="indeximg/instagram.png" alt="icon share_ig"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>@2019 ART PASTA ALL RIGHTS RESERVED.</p>
+    </div>
+
+
+
+    <script>
+        Vue.component('tab_story', {
+            template: `
+          <div class="tab_story">
+                    <div class="story_pic">
+                        <img src="indeximg/about-story.jpg" alt="about_story">
+                    </div>
+
+                    <div class="story_txt">
+                        <h3>品牌故事</h3>
+                        <p>愛吃！想吃！怎麼吃？都由您決定！<br>更有明星廚師為我們餐廳料理<br>期待您品嘗時，<br>每一口都吃進最真實的感動！</p>
+                   </div>
+                 
+          </div>
+          `,
+        });
+
+        Vue.component('tab_chef', {
+            template: `
+<div class="tab_chef">
+
+<div class="chef_wrap col-12 col-md-4">
+    <div class="f_fabio"><img src="indeximg/chef2.jpg" alt="chef"></div>
+    <div class="b_fabio">
+        <h4>法比歐Fabio</h4>
+        <p>帥度★★★✩✩</p>
+        <p>擅長義式料理
+            <hr>
+        </p>
+        <p>不僅擁有高超的料理手法，<br>更具令人折服的藝術性盤式美感</p>
+    </div>
+
+</div>
+
+<div class="chef_wrap col-12 col-md-4">
+    <div class="f_gong"><img src="indeximg/Gong_Yoo_(Sep_2016).png" alt="chef"></div>
+    <div class="b_gong">
+        <h4>孔劉Gong Yoo</h4>
+        <p>帥度★★★★✩</p>
+        <p>擅長義式料理
+            <hr>
+        </p>
+        <p>不僅擁有高超的料理手法，<br>更具令人折服的藝術性盤式美感</p>
+    </div>
+</div>
+
+<div class="chef_wrap col-12 col-md-4">
+    <div class="f_jamie"><img src="indeximg/chef.jpg" alt="chef"></div>
+    <div class="b_jamie">
+        <h4>傑米奧利佛Jamie</h4>
+        <p>帥度★★★✩✩</p>
+        <p>擅長義式料理
+            <hr>
+        </p>
+        <p>不僅擁有高超的料理手法，<br>更具令人折服的藝術性盤式美感</p>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+</div>
+          `,
+        });
+
+        Vue.component('tab_environment', {
+            template: `
+      <div class="tab_environment">
+
+        <div class="environment_wrap">
+            <div class="group">
+                <div class="front"><img src="indeximg/shop1.jpg" alt="shoppic"></div>
+                <div class="back"><img src="indeximg/shop2.jpg" alt="shoppic"></div>
+                <div class="top"><img src="indeximg/shop3.jpg" alt="shoppic"></div>
+                <div class="down"><img src="indeximg/shop7.jpg" alt="shoppic"></div>
+                <div class="right"><img src="indeximg/shop8.jpg" alt="shoppic"></div>
+                <div class="left"><img src="indeximg/shop7.jpg" alt="shoppic"></div>
+            </div>
+        </div>
+      </div>
+      `,
+        });
+
+
+        new Vue({
+            el: '#app',
+            data: {
+                content: 'tab_chef',
+            },
+
+        });  
+    </script>
+
+</body>
+
+</html>

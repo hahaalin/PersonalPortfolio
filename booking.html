@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>線上訂位</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="share2.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="animate.css">
+</head>
+
+<body>
+    <header class="page_header">
+
+
+        <div class="logo">
+            <a href="index.html"><img src="indeximg/logo-1.png"></a>
+        </div>
+
+
+        <input type="checkbox" name="" id="hb_control">
+
+        <label class="hb" for="hb_control">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </label>
+
+        <nav class="page_navbar">
+            <ul>
+                <li><a href="menu.html">帥廚菜單</a></li>
+                <li><a href="cook.html">手作體驗</a></li>
+                <li><a class="hoverbg" href="booking.html">線上訂位</a></li>
+                <li><a href="new.html">最新消息</a></li>
+                <li><a href="recipe.html">食譜分享</a></li>
+                <li><a href="about.html">關於我們</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- 內頁banner區 -->
+    <div class="banner inner">
+        <h2>線上訂位<br>Booking</h2>
+    </div>
+
+    <div class="topicon"><a href="#">Top</a></div>
+    <!--  -->
+
+    <section class="booking_inner">
+        <div class="container">
+
+            <div class="col-12 col-md-6">
+                <div class="booking_bg">
+                    <img src="indeximg/noodlebg.png" alt="noodlebg">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 booking_wrap">
+
+                <div class="booking_title">
+
+                    <p class="copywriting_p_big">用餐享樂在義術家！</p>
+                    <p>請詳細填寫下方表格，並確認核對聯繫資訊的正確性，以免損及相關權益，義術家將在收到表單後主動與您聯繫，確認您的訂位。
+                    </p>
+                    <img src="indeximg/smallicon_green.png" alt="booking_form_pic">
+
+                </div>
+
+                <div class="booking_form">
+
+                    <form action="#" method="post">
+
+                        <legend class="booking_form_title">
+                            <h3>填寫預約內容</h3>
+                            <img src="indeximg/undergress.png" alt="booking_form_pic">
+                        </legend>
+
+                        <div class="booking_form_detail">
+                            <label for="book_name">
+                                <p>訂位人姓名</p>
+                            </label>
+                            <input type="text" name="book_name" value="" placeholder="必填" required>
+                        </div>
+
+                        <div class="booking_form_detail">
+                            <label for="book_phone">
+                                <p>訂位人電話</p>
+                            </label>
+                            <input type="text" name="book_phone" placeholder="必填" required>
+                        </div>
+
+                        <div class="booking_form_detail">
+                            <label for="book_date">
+                                <p>選擇用餐日期</p>
+                            </label>
+                            <input type="date" name="book_date">
+                        </div>
+
+                        <div class="booking_form_detail">
+                            <label for="book_time">
+                                <p>選擇用餐時段</p>
+                            </label>
+                            <select name="book_time">
+                                <option>11:30</option>
+                                <option>12:00</option>
+                                <option>12:30</option>
+                                <option>13:00</option>
+                                <option>13:30</option>
+                                <option>17:00</option>
+                                <option>17:30</option>
+                            </select>
+                        </div>
+
+                        <div class="booking_form_detail">
+                            <label for="book_people">
+                                <p>選擇用餐人數</p>
+                            </label>
+                            <select name="book_people">
+                                <option>1位</option>
+                                <option>2位</option>
+                                <option>3位</option>
+                                <option>4位</option>
+                                <option>5位</option>
+                                <option>6位</option>
+                                <option>7位</option>
+                                <option>8位以上</option>
+                            </select>
+                        </div>
+
+
+                        <div class="booking_form_detail">
+                            <label for="book_purpose">
+                                <p>選擇用餐目的</p>
+                            </label>
+                            <input type="checkbox" name="book_purpose" value="birthday" />
+                            <label for="birthday">
+                                <p>慶生</p>
+                            </label>
+                            <input type="checkbox" name="book_purpose" value="appointment" />
+                            <label for="appointment">
+                                <p>約會</p>
+                            </label>
+
+                            <input type="checkbox" name="book_purpose" value="business" />
+                            <label for="business">
+                                <p>商務聚</p>
+                            </label>
+
+                            <input type="checkbox" name="book_purpose" value="family" />
+                            <label for="family">
+                                <p>家庭聚</p>
+                            </label>
+
+                            <input type="checkbox" name="book_purpose" value="friend" />
+                            <label for="friend">
+                                <p>朋友聚</p>
+                            </label>
+
+                            <input type="checkbox" name="book_purpose" value="others" />
+                            <label for="others">
+                                <p>其他</p>
+                            </label>
+                        </div>
+
+                        <div class="booking_form_detail">
+                            <label for="book_msg">
+                                <p>其他備註</p>
+                            </label><br>
+                            <textarea name="book_msg" cols="30" rows="5" required></textarea>
+                        </div>
+
+                        <div class="booking_form_detail">
+                            <label for="agree">
+                                <p>我已同意將個人資料提供「餐飲有限公司」使用</p>
+                            </label>
+                            <input type="checkbox" name="agree" value="agree" required>
+                        </div>
+
+                        <div class="booking_form_detail">
+                            <input type="submit" name="submit" value="確認訂位">
+                            <input type="reset" name="reset" value="重新填寫">
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="button_cancel">
+                    <a href="#">取消訂位</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+    <!--  -->
+    <footer>
+        <div class="container">
+
+            <div class="company">
+                <p>義術家有限公司</p>
+                <a href="index.html"><img src="indeximg/logo-1.png" alt="logo"></a>
+                <p>桃園市桃園區宏昌八街79號</p>
+                <p>03-333-333</p>
+            </div>
+
+            <div class="knowus">
+                <p>認識我們</p>
+                <a href="menu.html">帥廚菜單</a><span>/</span>
+                <a href="cook.html">手作體驗</a><span>/</span>
+                <a href="booking.html">線上訂位</a><span>/</span>
+                <a href="new.html">最新消息</a><span>/</span>
+                <a href="recipe.html">食譜分享</a><span>/</span>
+                <a href="about.html">關於我們</a>
+
+                <div class="followus">
+                    <p>追蹤我們</p>
+                    <a href="#"><img src="indeximg/facebook.png" alt="icon share_fb"></a>
+                    <a href="#"><img src="indeximg/instagram.png" alt="icon share_ig"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>@2019 ART PASTA ALL RIGHTS RESERVED.</p>
+    </div>
+</body>
+
+</html>

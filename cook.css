@@ -1,0 +1,234 @@
+
+/* *{
+    outline:1px solid #f00;
+}  */
+
+.cookservice_title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.step{
+    margin-bottom: 10px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius:  50px ;
+    cursor: pointer;
+}
+
+.step p:nth-child(1){
+    background-color: #4d5f2c;
+    color: #fff;
+    border-radius:  50px;
+    margin-right: 5px;
+   padding: 5px;
+   /* box-sizing: border-box; */
+
+}
+
+.step p:nth-child(2){
+
+   padding: 5px;
+box-sizing: border-box;
+}
+
+.icon.cook{
+    width: 30px;
+    height: 30px;
+    background-color: #4d5f2c;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icon.cook a{
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+.coopic{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cook_step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cook_step .cook_step_text{
+    flex-grow: 0.5;
+    text-align: center;
+}
+/* .cook.pasta .container{
+    position: relative;
+} */
+
+
+.cooktemple_imgoutside>div{
+    text-align: center;
+    background: #4d5f2c;
+    border-radius: 40px;
+    margin: 0.5%;
+    
+}
+
+.cooktemple_imgoutside >div a {
+    color: #fff;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+
+   img[alt*="activity_cook"]{
+    transform: rotate(-5deg);
+    width: 80%;
+    -webkit-clip-path: polygon(50% 0%, 87% 7%, 100% 60%, 75% 100%, 20% 100%, 0% 60%, 10% 6%);
+    clip-path: polygon(50% 0%, 87% 7%, 100% 60%, 75% 100%, 20% 100%, 0% 60%, 10% 6%);
+
+ }
+
+
+ .active,
+ .dot:hover {
+     background-color: #f1cfa0;
+ }
+
+
+@media screen and (max-width:767px){
+
+    img[alt*="cooktemple"]{
+        display: none;
+    }
+
+
+    .abs.bags{display: none;}
+    .abs.order{display: none;}
+
+    .cooktemple_imgoutside{
+        font-size: 0;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .cooktemple_imgoutside>div{
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+      
+    }
+    
+    .cooktemple_imgoutside>div a{
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-family: "Microsoft JhengHei";
+
+    }
+}
+
+@media screen and (min-width:768px){
+
+    
+.cookservice.title{
+
+    margin-top: 50px;
+}
+
+
+    .cooktemple_imgoutside{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        
+    }
+
+    .cooktemple_imgoutside>div {
+        width: 15%;
+        border-radius: 40px;
+        transform: all 1s;
+        margin: 0px;
+    }
+
+    .cooktemple_imgoutside >div a {
+
+        display: block;
+        padding: 10px 0px;
+
+        font-size: 18px;
+        
+    }
+    .abs{
+        position: absolute;
+    } 
+
+    .abs.pasta{
+        top: 37%;
+        left: 28%;
+    }
+
+    .abs.pizza{
+        top: 24%;
+        left: 35%;
+    }
+    .abs.panini{
+        top: 41%;
+        right: 10%;
+    }
+    .abs.juice{
+        bottom: 27%;
+        left: 44%;
+
+    }
+    .abs.bags{
+        bottom: 38%;
+        right: 14%;
+        width: 20%;
+        background:#6e504f;
+    }
+    .abs.order{
+        top: 29%;
+        left: 4%;
+        background:#6e504f;
+        
+    }
+
+
+    .abs.pasta:hover{
+        background:#6e504f;
+        animation: changeY 1s infinite;
+         
+       }
+    
+       .abs.pizza:hover{
+           background:#6e504f;
+           animation: changeY 1s infinite;
+       }
+       .abs.panini:hover{
+           background:#6e504f;
+           animation: changeY 1s infinite;
+       }
+       .abs.juice:hover{
+           background:#6e504f;
+           animation: changeY 1s infinite;
+    
+       }
+
+       .active,
+       .dot:hover {
+           transform: translateX(-20px);
+       }
+
+}
+
+
+@keyframes changeY {
+    0%{transform: translate(0px) ;
+        opacity: 0.8;}
+    100%{transform: translateY(-10px);
+        opacity: 1;}
+}
